@@ -1,0 +1,430 @@
+.font-we-use {
+  font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.inline {
+  vertical-align: top;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+.header-wrapper {
+  background: #21428c;
+}
+.header {
+  position: relative;
+  max-width: 1280px;
+  height: 85px;
+  margin: 0 auto;
+}
+.header__logo {
+  width: 280px;
+  height: 85px;
+  margin-left: 71px;
+  background: url('../img/logo.svg') no-repeat center center;
+}
+.header__contacts {
+  position: absolute;
+  top: 20px;
+  right: 98px;
+  .font-we-use;
+  color: #ffffff;
+}
+.header__contacts-phone {
+  margin: 0;
+  font-size: 25px;
+  line-height: 27px;
+}
+.header__contacts-phone--b {
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 25px;
+}
+.header__contacts-address {
+  margin: 6px 0 0;
+  font-size: 15px;
+  line-height: 15px;
+}
+.price-wrapper {
+  position: relative;
+  height: 540px;
+  background: url('../img/price_back.jpg') no-repeat center center;
+  background-size: cover;
+}
+.price {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100%;
+}
+.price-block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 102px;
+  width: 440px;
+  height: 400px;
+  padding: 40px;
+  background: #ffffff;
+}
+.price-block__header {
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  .font-we-use;
+  font-style: normal;
+  font-weight: normal;
+}
+.price-block__line {
+  width: 344px;
+  height: 2px;
+  margin-top: 19px;
+  background: url('../img/color_line.svg') no-repeat;
+  background-size: cover;
+}
+.price-block__text {
+  display: block;
+  margin: 28px 0 0;
+  font-size: 18px;
+  line-height: 23px;
+  .font-we-use;
+}
+.price-block__text--b {
+  font-weight: bold;
+}
+.price-block__btn {
+  display: block;
+  margin: 35px auto 0;
+  width: 287px;
+  height: 56px;
+  background: #21428c;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 19px;
+  padding: 19px 0 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.brands-wrapper {
+  background: #21428c;
+}
+.brands {
+  max-width: 925px;
+  min-height: 205px;
+  margin: 0 auto;
+  padding: 44px 0;
+  text-align: center;
+}
+.brands__item {
+  .inline;
+  height: 40px;
+  margin-top: 16px;
+  background: url('../img/printer_logos.svg') no-repeat;
+}
+.brands__item-hp {
+  width: 40px;
+  background-position: 0 0;
+}
+.brands__item-canon {
+  width: 110px;
+  background-position: -60px 0;
+}
+.brands__item-brother {
+  width: 100px;
+  background-position: -180px 0;
+}
+.brands__item-epson {
+  width: 105px;
+  background-position: -295px 0;
+}
+.brands__item-xerox {
+  width: 125px;
+  background-position: -415px 0;
+}
+.brands__item-samsung {
+  width: 125px;
+  background-position: -555px 0;
+}
+.brands__item-kyocera {
+  width: 125px;
+  background-position: -695px 0;
+}
+.brands__item-oki {
+  width: 80px;
+  background-position: -835px 0;
+}
+.brands__item-konica {
+  width: 175px;
+  background-position: 0 -65px;
+}
+.brands__item-sharp {
+  width: 110px;
+  background-position: -180px -65px;
+}
+.brands__item-lexmark {
+  width: 125px;
+  background-position: -300px -65px;
+}
+.brands__item-panasonic {
+  width: 135px;
+  background-position: -435px -65px;
+}
+.brands__item-ricoh {
+  width: 110px;
+  background-position: -580px -65px;
+}
+.brands__item-mimaki {
+  width: 110px;
+  background-position: -695px -65px;
+}
+.brands__item-toshiba {
+  width: 120px;
+  background-position: -810px -65px;
+}
+.advantages {
+  padding: 75px 0;
+  min-height: 100px;
+  background: #fdfef8;
+  .font-we-use;
+}
+.advantages__header {
+  .font-we-use;
+  position: relative;
+  width: 215px;
+  height: 53px;
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: normal;
+  &:after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 51px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    width: 71px;
+    height: 2px;
+    background: #21428c;
+  }
+}
+.advantages__container {
+  max-width: 1280px;
+  padding-top: 47px;
+  margin: 0 auto;
+  text-align: center;
+}
+.advantages__item {
+  .inline;
+  width: 351px;
+  height: 275px;
+  margin: 0 35px;
+}
+.advantages__item-header {
+  display: block;
+  margin: 32px 0 0;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  .font-we-use;
+}
+.advantages__item-text {
+  display: block;
+  margin: 12px 0 0;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  .font-we-use;
+}
+.advantages__item-icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+.advantages__item-icon-1 {
+   background: url('../img/icons/01.svg') no-repeat;
+ }
+.advantages__item-icon-2 {
+  background: url('../img/icons/02.svg') no-repeat;
+}
+.advantages__item-icon-3 {
+  background: url('../img/icons/03.svg') no-repeat;
+}
+.advantages__item-icon-4 {
+  background: url('../img/icons/04.svg') no-repeat;
+}
+.advantages__item-icon-5 {
+  background: url('../img/icons/05.svg') no-repeat;
+}
+.advantages__item-icon-6 {
+  background: url('../img/icons/06.svg') no-repeat;
+}
+.request-wrapper {
+  min-height: 455px;
+  padding: 65px 0;
+  background: #f2f2f2;
+}
+.request {
+  width: 351px;
+  margin: 0 auto;
+}
+.request__header {
+  margin: 0 0 37px 0;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  .font-we-use;
+  font-style: normal;
+  font-weight: normal;
+}
+.request-form__input {
+  width: 351px;
+  height: 58px;
+  padding: 22px 24px;
+  border: 1px solid #21428c;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  .font-we-use;
+}
+.request-form__input-tel {
+  margin-top: 19px;
+}
+.request-form__btn {
+  display: block;
+  margin: 35px auto 0;
+  width: 351px;
+  height: 56px;
+  background: #21428c;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 19px;
+  padding: 19px 0 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.request__line {
+  height: 2px;
+  background: url('../img/color_line.svg') no-repeat;
+  background-size: cover;
+}
+.map {
+  height: 400px;
+}
+.footer-wrapper {
+  background: #21428c;
+}
+.footer {
+  position: relative;
+  max-width: 1280px;
+  height: 121px;
+  margin: 0 auto;
+}
+.footer__logo {
+  width: 280px;
+  height: 121px;
+  margin-left: 71px;
+  background: url('../img/logo.svg') no-repeat center center;
+}
+.footer__contacts {
+  position: absolute;
+  top: 34px;
+  right: 98px;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+.footer__contacts-phone {
+  margin: 0;
+  font-size: 25px;
+  line-height: 27px;
+}
+.footer__contacts-phone--b {
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 25px;
+}
+.footer__contacts-address {
+  margin: 6px 0 0;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+@media screen and (min-width:780px) and (max-width:1000px) {
+  .advantages__item {
+    width: 275px;
+    margin: 0 25px;
+  }
+}
+
+@media screen and (min-width:481px) and (max-width:780px) {
+  .header {
+    min-width: 780px;
+  }
+  .header__logo {
+    .inline;
+    margin-left: 34px;
+  }
+  .header__contacts {
+    .inline;
+    position: static;
+    margin: 20px 0 0 161px;
+  }
+  .price-wrapper {
+    height: 410px;
+  }
+  .price-block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 60px;
+    width: 364px;
+    height: 356px;
+    padding: 25px;
+  }
+  .price-block__header {
+    font-size: 29px;
+    line-height: 29px;
+  }
+  .price-block__line {
+    width: 311px;
+  }
+  .price-block__text {
+    font-size: 17px;
+    font-weight: 300;
+  }
+  .price-block__btn {
+    width: 259px;
+    margin: 25px auto 0;
+  }
+  .brands {
+    padding: 44px 20px;
+  }
+  .brands__item {
+    margin-top: 5px;
+  }
+  .advantages__item {
+    width: 275px;
+    margin: 0 15px;
+  }
+  .advantages__item-header {
+    margin: 12px 0 0;
+  }
+}
+
+@media screen and (max-width:480px) {
+  /* Target portrait smartphones */
+}

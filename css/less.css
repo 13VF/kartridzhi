@@ -372,9 +372,10 @@ body {
     margin: 0 25px;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 780px) {
+@media screen and (min-width: 621px) and (max-width: 780px) {
   .header {
-    min-width: 780px;
+    max-width: 780px;
+    min-width: 621px;
   }
   .header__logo {
     vertical-align: top;
@@ -385,16 +386,11 @@ body {
     margin-left: 34px;
   }
   .header__contacts {
-    vertical-align: top;
-    display: -moz-inline-stack;
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
-    position: static;
-    margin: 20px 0 0 161px;
+    right: 66px;
   }
   .footer {
-    min-width: 780px;
+    max-width: 780px;
+    min-width: 621px;
   }
   .footer__logo {
     vertical-align: top;
@@ -405,13 +401,7 @@ body {
     margin-left: 34px;
   }
   .footer__contacts {
-    vertical-align: top;
-    display: -moz-inline-stack;
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
-    position: static;
-    margin: 20px 0 0 161px;
+    right: 66px;
   }
   .price-wrapper {
     height: 410px;
@@ -455,8 +445,9 @@ body {
     margin: 12px 0 0;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 620px) {
   .header {
+    max-width: 620px;
     min-width: 480px;
     height: auto;
   }
@@ -496,6 +487,7 @@ body {
     font-weight: 300;
   }
   .footer {
+    max-width: 620px;
     min-width: 480px;
     height: auto;
   }
@@ -533,7 +525,135 @@ body {
     font-weight: 300;
   }
   .price-wrapper {
+    height: 410px;
+  }
+  .price-block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 60px;
+    width: 364px;
+    height: 356px;
+    padding: 25px;
+  }
+  .price-block__header {
+    font-size: 29px;
+    line-height: 29px;
+  }
+  .price-block__line {
+    width: 311px;
+  }
+  .price-block__text {
+    font-size: 17px;
+    font-weight: 300;
+  }
+  .price-block__btn {
+    width: 259px;
+    margin: 25px auto 0;
+  }
+  .brands {
+    padding: 44px 20px;
+  }
+  .brands__item {
+    margin-top: 5px;
+  }
+  .advantages {
+    padding: 44px 0;
+  }
+  .advantages__item {
+    width: 275px;
+    margin: 0 15px;
+  }
+  .advantages__item-header {
+    margin: 12px 0 0;
+  }
+  .request-wrapper {
+    padding: 44px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    min-width: 320px;
+    height: auto;
+  }
+  .header__logo {
+    display: block;
+    margin: 0 auto;
+  }
+  .header__contacts {
+    display: block;
+    position: static;
+    min-width: 320px;
+    max-width: 480px;
+    height: 85px;
+    margin: 0 auto;
+    background: #000;
+  }
+  .header__contacts-phone {
+    display: block;
+    position: absolute;
+    top: 115px;
+    right: 25px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .header__contacts-phone--b {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 20px;
+  }
+  .header__contacts-address {
+    display: block;
+    position: absolute;
+    top: 110px;
+    left: 25px;
+    width: 130px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 300;
+  }
+  .footer {
+    min-width: 320px;
+    height: auto;
+  }
+  .footer__logo {
+    display: block;
+    margin: 0 auto;
+    height: 98px;
+  }
+  .footer__contacts {
+    display: block;
+    position: static;
+    height: 132px;
+    margin: 0 auto;
+    background: #000;
+  }
+  .footer__contacts-phone {
+    display: block;
+    padding-top: 32px;
+    text-align: center;
+    font-size: 38px;
+    line-height: 38px;
+  }
+  .footer__contacts-phone--b {
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 38px;
+  }
+  .footer__contacts-address {
+    display: block;
+    width: auto;
+    margin: 12px 0 0;
+    text-align: center;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 300;
+  }
+  .price-wrapper {
     height: 765px;
+    background-position: -325px -115px;
   }
   .price-block {
     position: absolute;
@@ -541,8 +661,11 @@ body {
     bottom: 0;
     margin: 0 auto;
     right: auto;
-    width: 480px;
-    height: 464px;
+    width: auto;
+    max-width: 480px;
+    min-width: 320px;
+    height: auto;
+    min-height: 464px;
     padding: 0;
   }
   .price-block__header {
@@ -551,7 +674,9 @@ body {
     line-height: 36px;
   }
   .price-block__line {
-    width: 480px;
+    width: auto;
+    max-width: 480px;
+    min-width: 320px;
     margin: 0;
   }
   .price-block__text {
@@ -561,10 +686,12 @@ body {
     font-weight: 300;
   }
   .price-block__btn {
-    width: 350px;
+    width: auto;
+    min-width: 320px;
+    max-width: 350px;
     height: 84px;
     padding: 25px 0;
-    margin: 25px auto 0;
+    margin: 25px auto 25px;
     font-size: 27px;
     line-height: 34px;
   }
@@ -579,7 +706,9 @@ body {
     font-size: 36px;
   }
   .advantages__item {
-    width: 370px;
+    width: auto;
+    max-width: 370px;
+    min-width: 320px;
     height: auto;
     min-height: 275px;
     margin: 30px 0 0;
@@ -598,19 +727,115 @@ body {
     width: 200px;
     height: 200px;
   }
+  .request {
+    width: auto;
+    max-width: 351px;
+    min-width: 320px;
+  }
   .request__header {
     font-size: 36px;
     line-height: 36px;
   }
   .request-form__input {
+    display: block;
+    width: 320px;
+    max-width: 351px;
+    min-width: 320px;
     height: 73px;
+    margin: 0 auto;
     font-size: 24px;
     line-height: 32px;
   }
+  .request-form__input-tel {
+    margin-top: 19px;
+  }
   .request-form__btn {
+    width: auto;
+    max-width: 351px;
+    min-width: 320px;
     height: 73px;
     padding: 22px 0 23px;
     font-size: 27px;
     line-height: 27px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .header {
+    min-width: 320px;
+    height: auto;
+  }
+  .header__logo {
+    display: block;
+    margin: 0 auto;
+  }
+  .header__contacts {
+    display: block;
+    position: static;
+    min-width: 320px;
+    max-width: 480px;
+    height: 85px;
+    margin: 0 auto;
+    background: #000;
+  }
+  .header__contacts-phone {
+    display: block;
+    position: absolute;
+    top: 117px;
+    right: 15px;
+    font-size: 17px;
+    line-height: 19px;
+  }
+  .header__contacts-phone--b {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 17px;
+  }
+  .header__contacts-address {
+    display: block;
+    position: absolute;
+    top: 112px;
+    left: 15px;
+    width: 130px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300;
+  }
+  .footer {
+    min-width: 320px;
+    height: auto;
+  }
+  .footer__logo {
+    display: block;
+    margin: 0 auto;
+    height: 98px;
+  }
+  .footer__contacts {
+    display: block;
+    position: static;
+    height: 132px;
+    margin: 0 auto;
+    background: #000;
+  }
+  .footer__contacts-phone {
+    display: block;
+    padding-top: 32px;
+    text-align: center;
+    font-size: 38px;
+    line-height: 38px;
+  }
+  .footer__contacts-phone--b {
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 38px;
+  }
+  .footer__contacts-address {
+    display: block;
+    width: auto;
+    margin: 12px 0 0;
+    text-align: center;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 300;
   }
 }

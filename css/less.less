@@ -307,9 +307,19 @@ body {
   font-size: 18px;
   line-height: 22px;
   .font-we-use;
+  outline-style: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .request-form__input-tel {
   margin-top: 19px;
+}
+.request-form__name.error > .request-form__input {
+  border: 1px solid #f04124;
+}
+.request-form__tel.error > .request-form__input {
+  border: 1px solid #f04124;
 }
 .request-form__btn {
   display: block;
@@ -662,27 +672,24 @@ body {
   }
   .price-wrapper {
     height: auto;
-    background-position: -325px -115px;
+  }
+  .price {
+    padding: 25px 0;
   }
   .price-block {
     position: static;
-    /*
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    margin: 0 auto;
-    right: auto;*/
     width: auto;
-    max-width: 480px;
+    max-width: 364px;
     min-width: 320px;
     height: auto;
-    min-height: 464px;
-    padding: 0;
+    min-height: 356px;
+    padding: 0 0 25px 0;
+    margin: 0 auto;
   }
   .price-block__header {
     padding: 25px;
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 29px;
+    line-height: 29px;
   }
   .price-block__line {
     width: auto;
@@ -691,20 +698,15 @@ body {
     margin: 0;
   }
   .price-block__text {
-    padding: 25px;
+    padding: 25px 25px 0;
     margin: 0;
-    font-size: 22px;
-    font-weight: 300;
+    font-size: 17px;
+    font-weight: 300;;
   }
   .price-block__btn {
     width: auto;
-    min-width: 320px;
-    max-width: 350px;
-    height: 84px;
-    padding: 25px 0;
-    margin: 25px auto 25px;
-    font-size: 27px;
-    line-height: 34px;
+    max-width: 259px;
+    margin: 25px auto 0;
   }
   .brands {
     padding: 44px 20px;
@@ -712,40 +714,24 @@ body {
   .brands__item {
     margin-top: 5px;
   }
-  .advantages__header {
-    width: 255px;
-    font-size: 36px;
-  }
   .advantages__item {
     width: auto;
     max-width: 370px;
     min-width: 320px;
     height: auto;
     min-height: 275px;
-    margin: 30px 0 0;
+    margin: 15px 0 0;
   }
   .advantages__item-header {
     margin: 0;
-    font-size: 34px;
-    line-height: 34px;
   }
   .advantages__item-text {
     margin-top: 28px;
-    font-size: 22px;
-    line-height: 28px;
-  }
-  .advantages__item-icon {
-    width: 200px;
-    height: 200px;
   }
   .request {
     width: auto;
     max-width: 351px;
     min-width: 320px;
-  }
-  .request__header {
-    font-size: 36px;
-    line-height: 36px;
   }
   .request-form__input {
     display: block;

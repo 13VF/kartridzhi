@@ -89,7 +89,7 @@
             <h2 class="request__header">Заявка на заправку картриджа</h2>
             <form class="request-form" data-abide>
                 <div class="request-form__name">
-                    <input type="text" name="name" placeholder="Ваше имя" class="request-form__input request-form__input-name" required>
+                    <input type="text" name="name" placeholder="Ваше имя" class="request-form__input request-form__input-name" pattern="^[а-яА-ЯёЁa-zA-Z\ ]+$" required>
                     <small class="error">Введите ваше имя</small>
                 </div>
                 <div class="request-form__tel">
@@ -101,7 +101,7 @@
         </div>
     </div>
     <div class="request__line"></div>
-    <div id="map" class="map"></div>
+    <div id="ya-map" class="map"></div>
     <div class="footer-wrapper">
         <div class="footer">
             <div class="footer__logo"></div>
@@ -111,23 +111,37 @@
             </div>
         </div>
     </div>
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/jquery.maskedinput.min.js"></script>
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.abide.js"></script>
     <script src="js/app.js"></script>
-    <script type="text/javascript">
 
-        function load_map(ymaps) {
-            var map = new ymaps.Map ('map', {
-                center: [45.041165, 41.965032],
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(mapInit);
+        var myMap, myPlacemark;
+
+        function mapInit () {
+            myMap = new ymaps.Map ("ya-map", {
+                center: [45.041516098550346,41.96488179629512],
                 zoom: 15
             });
-            var myPlacemark = new ymaps.Placemark([45.041165, 41.965032], {}, { preset: 'islands#redDotIcon' } );
-            map.geoObjects.add(myPlacemark);
+
+            myPlacemark = new ymaps.Placemark(
+                    [45.041516098550346, 41.96488179629512],
+                    {
+                        hintContent: 'Картридж-Мастер',
+                        balloonContent: 'Заправка картриджей'
+                    }, {
+                        preset: 'islands#redDotIcon'
+                    }
+            );
+
+            myMap.geoObjects.add(myPlacemark);
         }
     </script>
-    <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?load=package.full&wizard=constructor&lang=ru-RU&onload=load_map"></script>
 </body>
 </html>
 

@@ -93,10 +93,10 @@
                     <small class="error">Введите ваше имя</small>
                 </div>
                 <div class="request-form__tel">
-                    <input type="tel" name="tel" placeholder="Номер телефона" class="request-form__input request-form__input-tel" required>
+                    <input type="tel" name="tel" placeholder="Номер телефона" class="request-form__input request-form__input-tel" pattern="mobilephone" required>
                     <small class="error">Введите номер телефона</small>
                 </div>
-                <a href="#" class="request-form__btn">ОТПРАВИТЬ</a>
+                <a type="submit" class="request-form__btn">ОТПРАВИТЬ</a>
             </form>
         </div>
     </div>
@@ -113,7 +113,8 @@
     </div>
 
     <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/jquery.maskedinput.min.js"></script>
+    <script src="js/vendor/inputmask.js"></script>
+    <script src="js/vendor/jquery.inputmask.js"></script>
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.abide.js"></script>
     <script src="js/app.js"></script>
@@ -125,15 +126,15 @@
 
         function mapInit () {
             myMap = new ymaps.Map ("ya-map", {
-                center: [45.041516098550346,41.96488179629512],
+                center: [45.04144194054576, 41.964775174489645],
                 zoom: 15
             });
 
             myPlacemark = new ymaps.Placemark(
-                    [45.041516098550346, 41.96488179629512],
+                    [45.04144194054576, 41.964775174489645],
                     {
                         hintContent: 'Картридж-Мастер',
-                        balloonContent: 'Заправка картриджей'
+                        balloonContent: 'Картридж-Мастер'
                     }, {
                         preset: 'islands#redDotIcon'
                     }

@@ -862,16 +862,21 @@ body {
   background: #f2f2f2;
   padding: 65px 0;
 }
-.price-table {
-  max-width: 970px;
-  width: 100%;
+.price-table-inner-wrapper {
+  padding: 0 70px;
+  max-width: 1280px;
   margin: 0 auto;
+}
+.price-table {
+  width: 100%;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   border: 1px solid #dddddd;
 }
 .price-table__category-row {
   font-weight: bold;
 }
-.price-table__category-cell {
-  padding-left: 20px;
+@media screen and (max-width: 780px) {
+  .price-table-inner-wrapper {
+    padding: 0 20px;
+  }
 }

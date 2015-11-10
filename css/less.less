@@ -838,7 +838,7 @@ body {
 
 .price-table-wrapper {
   background: #f2f2f2;
-  padding: 65px 0;
+  padding: 40px 0;
 }
 .price-table-inner-wrapper {
   padding: 0 70px;
@@ -853,9 +853,26 @@ body {
 .price-table__category-row {
   font-weight: bold;
 }
+.price-table__header {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 30px;
+  .font-we-use;
+  font-style: normal;
+  font-weight: normal;
+}
 
 @media screen and (max-width:780px){
+  .price-table-wrapper {
+    padding: 20px 0;
+  }
   .price-table-inner-wrapper {
     padding: 0 20px;
+  }
+  .price-table__header {
+    font-size: 22px;
+    line-height: 22px;
+    padding-bottom: 12px;
   }
 }

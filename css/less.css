@@ -863,12 +863,11 @@ body {
   padding: 65px 0;
 }
 .price-table {
-  max-width: 900px;
+  max-width: 970px;
   width: 100%;
   margin: 0 auto;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  border-collapse: collapse;
-  border: 1px solid #000;
+  border: 1px solid #dddddd;
 }
 .price-table__category-row {
   font-weight: bold;

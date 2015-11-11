@@ -43,8 +43,8 @@ $(function(){
                 timeout: 25000,
                  success: function() {
                     $('.request-form').fadeOut(200);
-                    $('.request__header').html('Сообщение отправлено!');
-                    $('.request__text').html('Мы&nbsp;перезвоним вам в&nbsp;течении 1&nbsp;рабочего дня.').fadeIn(200);
+                    $('.request__header').html('Заявка отправлена!');
+                    $('.request__text').html('Мы&nbsp;перезвоним вам в&nbsp;течение рабочего дня.').fadeIn(200);
                  }
             });
         }

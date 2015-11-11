@@ -32,16 +32,20 @@ $(function(){
         if ( $('.request-form__name').hasClass('error') || $('.request-form__tel').hasClass('error') ) {
             return false;
         } else {
-            var results = $('.request-form').serialize();
             $.ajax({
                 type: "POST",
-                url:"/ajax/send",
-                data: results,
+                url:"//formspree.io/kmaster26@yandex.ru",
+                data: {
+                    name: $('.request-form__input-name').val(),
+                    telephone: $('.request-form__input-tel').val()
+                },
                 dataType: "json",
-                timeout: 25000/*,
-                 success: function(response) {
-
-                 }*/
+                timeout: 25000,
+                 success: function() {
+                    $('.request-form').fadeOut(200);
+                    $('.request__header').html('Сообщение отправлено!');
+                    $('.request__text').html('Мы&nbsp;перезвоним вам в&nbsp;течении 1&nbsp;рабочего дня.').fadeIn(200);
+                 }
             });
         }
     });

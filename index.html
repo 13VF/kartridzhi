@@ -11,34 +11,35 @@
   <script src="js/vendor/modernizr.js"></script>
 </head>
 <body>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter33516113 = new Ya.Metrika({
-                    id:33516113,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true
-                });
-            } catch(e) { }
-        });
 
-        var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter33516113 = new Ya.Metrika({
+                        id:33516113,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
 
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/33516113" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+            var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/33516113" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 
     <div class="header-wrapper">
       <div class="header">
@@ -116,6 +117,7 @@
     <div class="request-wrapper">
         <div class="request">
             <h2 class="request__header">Заявка на заправку картриджа</h2>
+            <span class="request__text"></span>
             <form class="request-form" data-abide>
                 <div class="request-form__name">
                     <input type="text" name="name" placeholder="Ваше имя" class="request-form__input request-form__input-name" pattern="^[а-яА-ЯёЁa-zA-Z\ ]+$" required>
@@ -156,7 +158,7 @@
         function mapInit () {
             myMap = new ymaps.Map ("ya-map", {
                 center: [45.04144194054576, 41.964775174489645],
-                zoom: 15
+                zoom: 17
             });
 
             myPlacemark = new ymaps.Placemark(
@@ -172,39 +174,39 @@
             myMap.geoObjects.add(myPlacemark);
         }
     </script>
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "LocalBusiness",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Ставрополь",
-    "addressRegion": "Ставропольский край",
-    "streetAddress": "ул. М. Морозова 4"
-  },
-  "description": "Заправка картриджей в Ставрополе.",
-  "name": "Картридж-Мастер",
-  "telephone": "+7(8652)404-773",
-  "openingHours": "Mo-Fr 09:00-18:00",
-  "currenciesAccepted": "RUB",
-  "paymentAccepted": "cash",
-  "email": "kmaster26@yandex.ru"
-}
 
-{
-  "@context": "http://schema.org/",
-  "@type": "Service",
-  "serviceType": "Заправка картриджей",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "Картридж-Мастер"
-  },
-  "areaServed": {
-    "@type": "City",
-    "name": "Ставрополь"
-  }
-}
-</script>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ставрополь",
+        "addressRegion": "Ставропольский край",
+        "streetAddress": "ул. Михаила Морозова 4"
+      },
+      "description": "Заправка картриджей в Ставрополе.",
+      "name": "Картридж Мастер",
+      "telephone": "+7(8652)404-773",
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "currenciesAccepted": "RUB",
+      "paymentAccepted": "cash",
+      "email": "kmaster26@yandex.ru",
+      "service": {
+        "@type": "Service",
+        "serviceType": "Заправка картриджей",
+        "areaServed": {
+            "@type": "City",
+            "name": "Ставрополь"
+        },
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "45.04144194054576",
+        "longitude": "41.964775174489645"
+      }
+    }
+    </script>
 
 </body>
 </html>
